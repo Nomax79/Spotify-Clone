@@ -1,40 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🎵 Spotify Clone
 
-## Getting Started
+Spotify Clone được xây dựng bằng **TypeScript, Next.js, React, Tailwind CSS** và **NextAuth** để mô phỏng chức năng của Spotify.
 
-First, run the development server:
+## 🚀 Công nghệ sử dụng
+- **Next.js** - Framework React cho SSR và SEO tốt hơn.
+- **TypeScript** - Giúp code an toàn và dễ bảo trì.
+- **Tailwind CSS** - Framework CSS tiện lợi.
+- **NextAuth.js** - Xác thực người dùng với Spotify API.
+- **Spotify Web API** - Lấy dữ liệu từ Spotify.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔧 Cài đặt
+### 1️⃣ Clone repository
+```sh
+git clone https://github.com/your-username/spotify-clone.git
+cd spotify-clone
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Cài đặt dependencies
+```sh
+npm install -g npm
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Cấu hình môi trường
+Tạo file `.env.local` và thêm thông tin Spotify API:
+```env
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your_secret_key
+SPOTIFY_CLIENT_ID=your_spotify_client_id
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### 4️⃣ Chạy dự án
+```sh
+npm run dev
+```
+Mở trình duyệt tại `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 🚀 Mở rộng
+- 🎵 **Tích hợp trình phát nhạc Spotify**.
+- 📜 **Thêm danh sách phát cá nhân hóa**.
+- 🎚 **Tạo giao diện tùy chỉnh với Tailwind CSS**.
