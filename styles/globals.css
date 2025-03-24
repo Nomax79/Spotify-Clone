@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .icon{
+    @apply h-5 w-5;
+  }
+}
+
+@layer utilities{
+  .scrollbar-hiden{
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+}
